@@ -84,12 +84,12 @@ extension SearchApiListVC: ViewModelProtocol {
             tblView.loginItems = loginVM.searchResponse?.items ?? []
             tblView.reloadTbl()
             
-//            if tblView.loginItems.count == 0 {
+            if tblView.loginItems.count == 0 {
                 self.aa_showAlert("Sorry", text: "No Result Found", doneText: "Ok") {
                     self.navigationController?.popViewController(animated: true)
                 }
             }
         }
-        
     }
+    
 }

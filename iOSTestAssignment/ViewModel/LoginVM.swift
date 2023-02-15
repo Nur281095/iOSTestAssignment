@@ -17,23 +17,34 @@ class LoginVM {
     
     fileprivate(set) var searchResponse: SearchResponse?
     
-    private let networkManager: NetworkManager
-    
-    init(networkManager: NetworkManager = NetworkManager()) {
-        self.networkManager = networkManager
-    }
-    
     func search(with query: String, page_no page: Int, per_page_limit limit: Int) {
-        networkManager.fetchSearchResult(query: query, page: page, per_page: limit) { [weak self] result in
-            guard let strongSelf = self else { return }
-            switch result {
-            case .success(let searchResponse):
-                strongSelf.searchResponse = searchResponse
-                strongSelf.delegate?.didUpdateSearchResult()
-            case .failure(let error):
-                print(error.localizedDescription)
+        var params = [String: AnyObject]()
+        params["page"] = page as AnyObject
+        params["per_page"] = limit as AnyObject
+        params["q"] = query as AnyObject
+        
+        SRWebClient.GET("\(API.baseURL)\(API.path)")
+            .data(params)
+            .send({ response, status in
+                if let searchs = self.convertStringToDictionary(text: response as? String ?? "") {
+                    self.searchResponse = SearchResponse(fromDictionary: searchs)
+                    self.delegate?.didUpdateSearchResult()
+                }
+            }, failure: { error in
+                print(error?.localizedDescription as Any)
+                
+            })
+    }
+    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+        if let data = text.data(using: .utf8) {
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:AnyObject]
+                return json
+            } catch {
+                print("Something went wrong")
             }
         }
+        return nil
     }
 }
 

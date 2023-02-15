@@ -2,6 +2,5 @@ ${PODS_ROOT}/Target Support Files/Pods-iOSTestAssignment/Pods-iOSTestAssignment-
 ${BUILT_PRODUCTS_DIR}/AAExtensions/AAExtensions.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/KafkaRefresh/KafkaRefresh.framework
-${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework

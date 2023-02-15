@@ -9,7 +9,7 @@ import UIKit
 
 class LoginTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
 
-    var loginItems = [SearchAPI]()
+    var loginItems = [Item]()
     
     override func draw(_ rect: CGRect) {
         // Drawing code

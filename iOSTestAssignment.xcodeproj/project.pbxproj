@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0118A830299CA50200947795 /* SRWebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0118A82F299CA50200947795 /* SRWebClient.swift */; };
 		0140F62C28673E1F00B12CF5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140F62B28673E1F00B12CF5 /* API.swift */; };
-		0140F62E2867408400B12CF5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140F62D2867408400B12CF5 /* NetworkManager.swift */; };
 		0140F630286740BB00B12CF5 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140F62F286740BB00B12CF5 /* SearchResponse.swift */; };
 		0140F6362867438F00B12CF5 /* SearchApiListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140F6352867438F00B12CF5 /* SearchApiListVC.swift */; };
 		0140F6382867465300B12CF5 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140F6372867465300B12CF5 /* LoginVM.swift */; };
@@ -26,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0118A82F299CA50200947795 /* SRWebClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRWebClient.swift; sourceTree = "<group>"; };
 		0140F62B28673E1F00B12CF5 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		0140F62D2867408400B12CF5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0140F62F286740BB00B12CF5 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		0140F6352867438F00B12CF5 /* SearchApiListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchApiListVC.swift; sourceTree = "<group>"; };
 		0140F6372867465300B12CF5 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				0140F62B28673E1F00B12CF5 /* API.swift */,
-				0140F62D2867408400B12CF5 /* NetworkManager.swift */,
+				0118A82F299CA50200947795 /* SRWebClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 				01F59759286737C100ECA058 /* AppDelegate.swift in Sources */,
 				0140F630286740BB00B12CF5 /* SearchResponse.swift in Sources */,
 				0140F64228674AD900B12CF5 /* Extention.swift in Sources */,
-				0140F62E2867408400B12CF5 /* NetworkManager.swift in Sources */,
+				0118A830299CA50200947795 /* SRWebClient.swift in Sources */,
 				0140F62C28673E1F00B12CF5 /* API.swift in Sources */,
 				0140F6382867465300B12CF5 /* LoginVM.swift in Sources */,
 				0140F63A286746B400B12CF5 /* LoginTableView.swift in Sources */,

@@ -25,8 +25,8 @@ class LoginCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configCell(model: SearchAPI) {
-        img.sd_setImage(with: URL(string: model.avatar_url ?? ""), placeholderImage: UIImage(named: "placeholder"))
+    func configCell(model: Item) {
+        img.sd_setImage(with: URL(string: model.avatarUrl ?? ""), placeholderImage: UIImage(named: "placeholder"))
         loginLbl.text = model.login
         typLbl.text = model.type
     }
